@@ -8,11 +8,27 @@
     <meta name="keywords" content="">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" type="text/css"/>
-    <link rel="icon" href="./img/favicon.png">
+    <!-- <link rel="icon" href="./img/favicon.png"> -->
   </head>
   <body>
+    <form id="searchForm" class="searchBar" method="post">
+      <input id="searchAge" type="number" name="age" value="" placeholder="Child's age">
+      <input id="searchWeight" type="number" name="weight" value="" placeholder="Child's weight">
+      <select id="searchUnit" class="" name="unit">
+        <option value="lbs">pounds</option>
+        <option value="kg">kilograms</option>
+        <option value="stone">stone</option>
+      </select>
+      <button id="submitButton" type="button" name="button">Search</button>
+    </form>
 
-    <footer id="mainFooter"><a href="http://seanmcp.com"><img src="./img/logo-whiteout.png" alt="&copy; Sean McPherson" title ="&copy; Sean McPherson"/></a>
+    <div id="outputContainer">
+
+    </div>
+
+    <footer id="mainFooter"><a href="http://seanmcp.com">
+      <!-- <img src="./img/logo-whiteout.png" alt="&copy; Sean McPherson" title ="&copy; Sean McPherson"/> -->
+    </a>
     </footer>
     <script src="./js/main.js"></script>
   </body>
